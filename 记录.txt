@@ -1,0 +1,324 @@
+DGCL:
+      DrugBank         : Best epoch :  100  , AUC :  0.6967935381226288    
+			 Best epoch :  148  , AUC :  0.6996083710684127
+			 Best epoch :  159  , AUC :  0.6996695630889732
+			 Best epoch :  243  , AUC :  0.7000367152123363
+		         Best epoch :  266  , AUC :  0.7020560518908334
+      DGIdb            : Best epoch :  72  , AUC :  0.9304672897196262  
+			 Best epoch :  133  , AUC :  0.9327102803738317
+			 Best epoch :  133  , AUC :  0.9327102803738317
+			 Best epoch :  133  , AUC :  0.9327102803738317
+		         Best epoch :  133  , AUC :  0.9327102803738317
+
+only GCN: DrugBankhuanlgcn : Best epoch :  222  , AUC :  0.6774568596255048 Best epoch :  259  , AUC :  0.9338317757009346  （300）
+GCN + BPR:
+      DrugBank         : Best epoch :  90  , AUC :  0.6983233386366418      
+			 Best epoch :  118  , AUC :  0.6985069146983234
+			 Best epoch :  118  , AUC :  0.6985069146983234
+			 Best epoch :  118  , AUC :  0.6985069146983234
+		         Best epoch :  277  , AUC :  0.6989352588422469
+      DGIdb            : Best epoch :  79  , AUC :  0.9289719626168225   
+			 Best epoch :  79  , AUC :  0.9289719626168225
+			 Best epoch :  185  , AUC :  0.9304672897196262
+			 Best epoch :  216  , AUC :  0.9323364485981308
+		         Best epoch :  216  , AUC :  0.9323364485981308
+GCN + BPR+ 多个negsample(num_neg = 10):
+      DrugBank         : Best epoch :  82  , AUC :  0.7034022763431649     
+			 Best epoch :  145  , AUC :  0.7046261167543753
+			 Best epoch :  184  , AUC :  0.7072573736384775
+			 Best epoch :  184  , AUC :  0.7072573736384775
+		         Best epoch :  184  , AUC :  0.7072573736384775
+      DGIdb            : Best epoch :  95  , AUC :  0.925607476635514  
+			 Best epoch :  143  , AUC :  0.9297196261682243
+			 Best epoch :  178  , AUC :  0.9300934579439253
+			 Best epoch :  248  , AUC :  0.9304672897196262
+		         Best epoch :  248  , AUC :  0.9304672897196262
+
+GCN + BPR+ 多个mulgenenegsample(num_mul_neg = 10):
+      DrugBank         : Best epoch :  98  , AUC :  0.6534083955452209    
+			 Best epoch :  146  , AUC :  0.6628931587321013
+			 Best epoch :  191  , AUC :  0.668278056541427
+			 Best epoch :  244  , AUC :  0.6699914331171215
+		         Best epoch :  289  , AUC :  0.6740301064741158
+      DGIdb            : Best epoch :  99  , AUC :  0.9297196261682243 
+			 Best epoch :  127  , AUC :  0.9345794392523364
+			 Best epoch :  127  , AUC :  0.9345794392523364
+			 Best epoch :  127  , AUC :  0.9345794392523364
+		         Best epoch :  127  , AUC :  0.9345794392523364
+
+GCN + BPR+ 多个negsample(num_neg = 100):
+      DrugBank         : Best epoch :  94  , AUC :  0.699057642883368     
+			 Best epoch :  148  , AUC :  0.7071349895973565
+			 Best epoch :  196  , AUC :  0.708603598090809
+			 BBest epoch :  223  , AUC :  0.7098886305225799
+		         Best epoch :  281  , AUC :  0.7123363113450006
+
+
+      DrugBank         : Best epoch :  94  , AUC :  0.6989964508628075   
+			 Best epoch :  149  , AUC :  0.7084812140496879
+			 Best epoch :  196  , AUC :  0.7098274385020193
+			 Best epoch :  196  , AUC :  0.7098274385020193
+		         Best epoch :  269  , AUC :  0.7107453188104271
+ 8.30
+      DrugBank         : Best epoch :  200  , AUC :  0.7117243911393955
+ 
+
+GCN + BPR+ 多个mulgenenegsample(num_mul_neg = 50):
+      DrugBank         : Best epoch :  73  , AUC :  0.6369477420144413  
+			 Best epoch :  148  , AUC :  0.6408640313303146
+			 Best epoch :  192  , AUC :  0.6464936972218822
+			 Best epoch :  242  , AUC :  0.6604454779096806
+		         Best epoch :  296  , AUC :  0.6630155427732224
+      DGIdb            : Best epoch :  100  , AUC :  0.9214953271028037
+			 Best epoch :  138  , AUC :  0.9297196261682243
+			 Best epoch :  182  , AUC :  0.9319626168224299
+			 Best epoch :  224  , AUC :  0.9327102803738317
+		         Best epoch :  280  , AUC :  0.9334579439252336
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample(num_mul_neg = 50 num_neg = 100 ):
+
+      DrugBank         : Best epoch :  100  , AUC :  0.698262146  
+			 Best epoch :  142  , AUC :  07100110145
+			 Best epoch :  142  , AUC :  07100110145
+			 Best epoch :  142  , AUC :  07100110145
+		         Best epoch :  253  , AUC :  0.710500550
+
+      DGIdb            : Best epoch :  99  , AUC :  0.9222429906542056
+			 Best epoch :  137  , AUC :  0.9364485981308411
+			 Best epoch :  197  , AUC :  0.9401869158878504
+			 Best epoch :  197  , AUC :  0.9401869158878504
+		         Best epoch :  251  , AUC :  0.9413084112149532
+      
+      DrugBank         : Best epoch :  97  , AUC :  0.6977114184310366 
+			 Best epoch :  150  , AUC :  0.708848366173051
+			 Best epoch :  150  , AUC :  0.708848366173051
+			 Best epoch :  150  , AUC :  0.708848366173051
+		         Best epoch :  278  , AUC :  0.7090931342552931
+
+      DGIdb            : Best epoch :  99  , AUC :  0.9222429906542056
+			 Best epoch :  137  , AUC :  0.9364485981308411
+			 Best epoch :  197  , AUC :  0.9401869158878504
+			 Best epoch :  197  , AUC :  0.9401869158878504
+		         Best epoch :  251  , AUC :  0.9413084112149532
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample(num_mul_neg = 200 num_neg = 100 ):
+
+      DrugBank         : Best epoch :  98  , AUC :  0.6781911638722311 
+			 Best epoch :  138  , AUC :  0.7007710194590625
+			 Best epoch :  188  , AUC :  0.705299228980541
+			 Best epoch :  188  , AUC :  0.705299228980541
+		         Best epoch :  188  , AUC :  0.705299228980541
+
+     
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample(num_mul_neg = 20 num_neg = 100 ):
+
+      DrugBank         : Best epoch :  100  , AUC :  0.7041977726104516
+			 Best epoch :  130  , AUC :  0.7078692938440827
+			 Best epoch :  159  , AUC :  0.708848366173051
+			 Best epoch :  223  , AUC :  0.7092155182964142
+		         Best epoch :  223  , AUC :  0.7092155182964142
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample(num_mul_neg = 10 num_neg = 100 ):
+
+      DrugBank         : Best epoch :  100  , AUC :  0.7041977726104516
+			 Best epoch :  130  , AUC :  0.7078692938440827
+			 Best epoch :  159  , AUC :  0.708848366173051
+			 Best epoch :  223  , AUC :  0.7092155182964142
+		         Best epoch :  223  , AUC :  0.7092155182964142
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample( num_neg = 200 ):
+
+      DrugBank         : Best epoch :  97  , AUC :  0.6926324807245136
+			 Best epoch :  148  , AUC :  0.7057275731244645
+			 Best epoch :  183  , AUC :  0.7100110145637009
+			 Best epoch :  237  , AUC :  0.7110512789132297
+		         Best epoch :  261  , AUC :  0.7112348549749112
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample( num_neg = 200 ,num_mul_neg = 100):
+
+      DrugBank         : Best epoch :  99  , AUC :  0.6920817525394689
+			 Best epoch :  139  , AUC :  0.7081752539468853
+			 Best epoch :  185  , AUC :  0.7111736629543508
+			 Best epoch :  226  , AUC :  0.7112348549749112
+		         Best epoch :  226  , AUC :  0.7112348549749112
+      DGIdb            : Best epoch :  98  , AUC :  0.9046728971962616
+			 Best epoch :  150  , AUC :  0.930841121495327
+			 Best epoch :  198  , AUC :  0.9368224299065421
+			 Best epoch :  246  , AUC :  0.9394392523364486
+		         Best epoch :  268  , AUC :  0.9401869158878504
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample( num_neg = 100 ,num_mul_neg = 10):
+
+      DrugBank         : Best epoch :  87  , AUC :  0.7014441316852282
+			 Best epoch :  135  , AUC :  0.7087871741524905
+			 Best epoch :  176  , AUC :  0.7101945906253825
+			 Best epoch :  226  , AUC :  0.7112348549749112
+		         Best epoch :  226  , AUC :  0.7112348549749112
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample( num_neg = 100 ,num_mul_neg = 30):
+
+      DrugBank         : Best epoch :  99  , AUC :  0.702117243911394
+			 Best epoch :  138  , AUC :  0.7103169746665035
+			 Best epoch :  138  , AUC :  0.7103169746665035
+			 Best epoch :  138  , AUC :  0.7103169746665035
+		         Best epoch :  138  , AUC :  0.7103169746665035
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100 ,num_mul_neg = 50  lr :5e -3  layer =3):
+
+      DGIdb            : Best epoch :  77  , AUC :  0.9398130841121496
+			 Best epoch :  102  , AUC :  0.9401869158878504
+			 Best epoch :  166  , AUC :  0.9431775700934579
+			 Best epoch :  166  , AUC :  0.9431775700934579
+		         Best epoch :  166  , AUC :  0.9431775700934579
+      8.28
+      DGIdb            : Best epoch :  77   , AUC :  0.9398130841121496
+			 Best epoch :  102  , AUC :  0.9401869158878504
+			 Best epoch :  165  , AUC :  0.9416822429906542
+			 Best epoch :  233  , AUC :  0.9420560747663551
+		         Best epoch :  273  , AUC :  0.9431775700934579
+      DGIdb            : Best epoch :  77  , AUC :  0.9398130841121496
+			 Best epoch :  102  , AUC :  0.9401869158878504
+			 Best epoch :  164  , AUC :  0.942803738317757
+			 Best epoch :  247  , AUC :  0.9439252336448598
+		         Best epoch :  247  , AUC :  0.9439252336448598
+      DGIdb            : Best epoch :  77  , AUC :   0.93981308
+			 Best epoch :  102  , AUC :  0.94018691
+			 Best epoch :  164  , AUC :  0.94130841
+			 Best epoch :  195  , AUC :  0.94130841
+		         Best epoch :  297  , AUC :  0.94355140
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100 ,num_mul_neg = 50  lr :5e -3  layer =4):
+
+      DGIdb            : Best epoch :  75  , AUC :  0.94205
+			 Best epoch :  144  , AUC :  0.944673
+			 Best epoch :  179  , AUC :  0.946542
+			 Best epoch :  179  , AUC :  0.946542
+		         Best epoch :  179  , AUC :  0.946542
+      DGIdb            : Best epoch :  73  , AUC :  0.9416822429906542
+			 Best epoch :  127  , AUC :  0.9435514018691589
+			 Best epoch :  181  , AUC :  0.9439252336448598
+			 Best epoch :  181  , AUC :  0.9439252336448598
+		         Best epoch :  181  , AUC :  0.9439252336448598
+  
+      DGIdb            :  Best epoch :  75  , AUC :  0.9420560747663551
+			 Best epoch :  140  , AUC :  0.9442990654205607
+			 Best epoch :  140  , AUC :  0.9442990654205607
+			 Best epoch :  140  , AUC :  0.9442990654205607
+		         Best epoch :  268  , AUC :  0.9446728971962617d
+
+      DGIdb            : Best epoch :  73  , AUC :  0.9416822429906542
+			 Best epoch :  126  , AUC :  0.9431775700934579
+			 Best epoch :  140  , AUC :  0.9442990654205607
+			 Best epoch :  170  , AUC :  0.9450467289719626
+		         Best epoch :  170  , AUC :  0.9450467289719626
+      DGIdb            : Best epoch :  73  , AUC :  0.9416822429906542
+
+			 Best epoch :  126  , AUC :  0.9431775700934579
+			 Best epoch :  180  , AUC :  0.9461682242990654
+			 Best epoch :  180  , AUC :  0.9461682242990654
+		         Best epoch :  180  , AUC :  0.9461682242990654
+      embedding size == 256
+      DGIdb            : Best epoch :  191  , AUC :  0.9431775700934579
+                         Best epoch :  113  , AUC :  0.9442990654205607
+			 Best epoch :  137  , AUC :  0.9450467289719626
+			 Best epoch :  146  , AUC :  0.9461682242990654
+			 Best epoch :  130  , AUC :  0.9435514018691589
+		         Best epoch :  167  , AUC :  0.9450467289719626
+			 Best epoch :  153  , AUC :  0.9446728971962617
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100 ,num_mul_neg = 50  lr :5e -3  layer =5):
+
+      DGIdb            : Best epoch :  77  , AUC :  0.9398130841121496
+			 Best epoch :  133  , AUC :  0.9401869158878504
+			 Best epoch :  182  , AUC :  0.944299
+			 Best epoch :  182  , AUC :  0.944299
+		         Best epoch :  182  , AUC :  0.944299
+
+
+      DGIdb            : Best epoch :  82  , AUC :  0.9413084112149532
+			 Best epoch :  126  , AUC :  0.9416822429906542
+			 Best epoch :  179  , AUC :  0.9442990654205607
+			 Best epoch :  179  , AUC :  0.9442990654205607
+		         Best epoch :  179  , AUC :  0.9442990654205607
+
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100   lr :1e -3  layer =4):
+
+      DrugBank           
+		         Best epoch : 	184	AUC :0.7128870395300453
+			 Best epoch:	252,	AUc : 0.7111124709337903
+			 Best epoch:	268,	AUc : 0.7128870395300453
+			 Best epoch:	178,	AUc : 0.7103169746665035
+			 Best epoch:	160,	AUc : 0.7126422714478032
+			 Best epoch:	278,	AUc : 0.712152735283319
+			 Best epoch:	281,	AUc : 0.7112348549749112
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100   lr :1e -3  layer =3):
+
+      DrugBank           
+		         Best epoch : 	247	AUC :0.7122751193244401
+			 Best epoch :	206	AUC : 0.7122751193244401
+			 Best epoch:	256,	AUc : 0.7109900868926692
+			 Best epoch:	283,	AUc : 0.7110512789132297
+			 Best epoch:	253,	AUc : 0.7093990943580957
+			 Best epoch:	198,	AUc : 0.7118467751805164
+			 Best epoch:	222,	AUc : 0.7112348549749112
+
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100  ,num_mul_neg = 10 lr :1e -3  layer =4):
+
+      DrugBank           
+		         Best epoch :  153  , AUC :  0.710255782645943
+			 Best epoch:	252,	AUc : 0.7111124709337903
+			 Best epoch:	268,	AUc : 0.7128870395300453
+			 Best epoch:	178,	AUc : 0.7103169746665035
+			 Best epoch:	160,	AUc : 0.7126422714478032
+			 Best epoch:	278,	AUc : 0.712152735283319
+			 Best epoch:	281,	AUc : 0.7112348549749112
+
+
+
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 100 ,num_mul_neg = 75  lr :5e -3):
+
+    DGIdb            : Best epoch :  77  , AUC :  0.9398130841121496
+			 Best epoch :  102  , AUC :  0.9401869158878504
+			 Best epoch :  166  , AUC :  0.9431775700934579
+			 Best epoch :  166  , AUC :  0.9431775700934579
+		         Best epoch :  166  , AUC :  0.9431775700934579
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 300 ,lr :3e -3):
+      DrugBank         : Best epoch :  100  ,  AUC :  0.70175
+			 Best epoch :  144  , AUC :  0.70796
+			 Best epoch :  177  , AUC :  0.70915
+			 Best epoch :  177  , AUC :  0.70915
+		         Best epoch :  177  , AUC :  0.7091543
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 300 ,lr :3e -3):
+      DrugBank         : Best epoch :  100  ,  AUC :  0.70175
+			 Best epoch :  144  , AUC :  0.70796
+			 Best epoch :  177  , AUC :  0.70915
+			 Best epoch :  177  , AUC :  0.70915
+		         Best epoch :  177  , AUC :  0.7091543
+
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 50 ,lr :1e -3):
+      DrugBank         : Best epoch :  85   , AUC :  0.7016888997674703
+			 Best epoch :  136  , AUC :  0.7082976379880064
+			 Best epoch :  195  , AUC :  0.7100110145637009
+			 Best epoch :  195  , AUC :  0.7100110145637009
+		         Best epoch :  195  , AUC :  0.7100110145637009
+
+GCN + BPR+ 多个negsample+ 多个mulgenenegsample+ 多个muldrugnegsample( num_neg = 50 ,,num_mul_neg_gene = 50 ,num_mul_neg_drug = 50 lr :1e -3):
+      DrugBank         : Best epoch :  97  , AUC :  0.6964875780198262
+			 Best epoch :  149  , AUC :  0.7032187002814833
+			 Best epoch :  171  , AUC :  0.7047485007954962
+			 Best epoch :  171  , AUC :  0.7047485007954962
+		         Best epoch :  293  , AUC :  0.705421613021662
+
+
