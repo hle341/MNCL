@@ -1,6 +1,0 @@
-Code/wandb/
-Code/__pycache__/
-Code/Utils/__pycache__/
-.idea/
-__pycache__/
-*.pyc
